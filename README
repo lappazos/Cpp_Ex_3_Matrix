@@ -1,0 +1,15 @@
+Time results:
+-------------------------------------------------------
+|       |      500 x 500      |       50 x 50         |
+-------------------------------------------------------
+|	   |    *    |     +     |     *     |     +      |
+-------------------------------------------------------
+|linear | 2.50307  | 0.0029522  | 0.0032442 | 3.39e-05  |
+-------------------------------------------------------
+|eigen  | 6e-07 | 5e-07 | 5e-07 | 5e-07|
+-------------------------------------------------------
+
+in eigen it runs faster, because they implement matrix in a better and smarter way then our
+naive way, maybe parallel, maybe better mult algorithm.
+of course size 50 will be better than size 500, because it is smaller.
+of course + is faster than *, because it is O(n^2) against O(n^3).
